@@ -105,4 +105,7 @@ add_executable(amg amg.c)
 target_link_libraries(amg PUBLIC ${AMG_DEPENDENCIES} m)
 target_include_directories(amg PUBLIC ${CMAKE_BINARY_DIR})
 
+target_link_libraries(amg PUBLIC /users/jereddt/PROTOOL25/Vernier/install/lib/libvernier.so)
+target_include_directories(amg PUBLIC /users/jereddt/PROTOOL25/Verniers/install/include)
+
 install(TARGETS amg DESTINATION ${CMAKE_INSTALL_BINDIR})
