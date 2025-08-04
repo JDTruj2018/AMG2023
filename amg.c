@@ -819,6 +819,7 @@ main( hypre_int argc,
 
    HYPRE_IJVectorDestroy(ij_x);
 
+
    /* Finalize hypre */
    HYPRE_Finalize();
 
@@ -832,8 +833,9 @@ main( hypre_int argc,
    adiak_fini();
 #endif
 
+
    /* Finalize MPI */
-   hypre_MPI_Finalize();
+   //hypre_MPI_Finalize();
 
    return (0);
 }
